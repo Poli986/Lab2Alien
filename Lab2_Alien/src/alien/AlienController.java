@@ -5,7 +5,8 @@ package alien;
  */
 
 
-
+import parole.AlienDictionary;
+import parole.Word;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -15,8 +16,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
+
 public class AlienController {
 	
+	private AlienDictionary model;
+
     @FXML
     private ResourceBundle resources;
     @FXML
@@ -40,10 +44,13 @@ public class AlienController {
     	
     }
   
+    void setModel(AlienDictionary ad) {
+    	this.model=ad;
+    }
     
     @FXML
-    void doTranslate(ActionEvent event) {
-    	    	
+    void doTranslate(ActionEvent event) { 
+    	txtResult.setText(model.scelta(txtWord.getText()));
     }
     
     

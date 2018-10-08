@@ -37,7 +37,7 @@
                         <Font name="System Bold Italic" size="16.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="25.0" prefWidth="213.0">
+                  <TextField fx:id="txtWord" prefHeight="25.0" prefWidth="213.0">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
@@ -52,7 +52,7 @@
                   </Button>
                </children>
             </HBox>
-            <TextArea prefHeight="417.0" prefWidth="493.0">
+            <TextArea fx:id="txtResult" prefHeight="417.0" prefWidth="493.0">
                <VBox.margin>
                   <Insets bottom="10.0" top="10.0" />
                </VBox.margin></TextArea>
