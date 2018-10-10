@@ -1,6 +1,7 @@
 package alien;
-	
+
 import javafx.application.Application;
+import javafx.css.SimpleStyleableObjectProperty;
 import javafx.stage.Stage;
 import parole.AlienDictionary;
 import javafx.scene.Scene;
@@ -26,7 +27,7 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		launch(args);
 	}
